@@ -1,0 +1,38 @@
+name: food_apps
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.6
+  flutter:
+    sdk: flutter
+  google_fonts: 5.0.0
+  sqflite: 2.3.0
+  path: any
+  fluttertoast: ^8.2.4
+  easy_stepper: ^0.8.3
+  google_maps_flutter: ^2.1.1
+dev_dependencies:
+
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - asset/img/
+    - asset/img/salad/
+
+  fonts:
+    - family: jost
+      fonts:
+        - asset: asset/font/jost.ttf
+          weight: 700
