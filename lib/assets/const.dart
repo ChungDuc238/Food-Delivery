@@ -40,6 +40,35 @@ class Const {
   static const String salad8 = 'asset/img/salad/salad8.jpeg';
   static const String salad9 = 'asset/img/salad/salad9.jpeg';
   static const String salad10 = 'asset/img/salad/salad10.jpeg';
+  static const String avocado = 'asset/img/salad/avocado.jpg';
+  static const String banana = 'asset/img/salad/banana.jpg';
+  static const String blueberry = 'asset/img/salad/blueberry.jpg';
+  static const String datePalm = 'asset/img/salad/datePalm.jpg';
+  static const String durian = 'asset/img/salad/durian.jpg';
+  static const String grape = 'asset/img/salad/grape.jpg';
+  static const String honeydew = 'asset/img/salad/honeydew.jpg';
+  static const String grapeFuirt = 'asset/img/salad/grapefuirt.jpg';
+  static const String oranges = 'asset/img/salad/oranges.jpg';
+
+  static const String Watermelon = 'asset/img/salad/Watermelon.jpg';
+  static const String Strawberry = 'asset/img/salad/Strawberry.jpg';
+  static const String Nectarine = 'asset/img/salad/Nectarine.jpg';
+  static const String Mandarin = 'asset/img/salad/Mandarin.jpg';
+  static const String Pineapple = 'asset/img/salad/Pineapple.jpg';
+  static const String Apricot = 'asset/img/salad/Apricot.jpg';
+  static const String Coconut = 'asset/img/salad/Coconut.jpg';
+  static const String Lime = 'asset/img/salad/Lime.jpg';
+  static const String Redcurrant = 'asset/img/salad/Redcurrant.jpg';
+  static const String Persimmon = 'asset/img/salad/Persimmon.jpg';
+  static const String Peach = 'asset/img/salad/Peach.jpg';
+  static const String Loganberry = 'asset/img/salad/Loganberry.jpg';
+  static const String Keriberry = 'asset/img/salad/Keriberry.jpg';
+  static const String Kokum = 'asset/img/salad/Kokum.jpg';
+  static const String Kedondong = 'asset/img/salad/Kedondong.jpg';
+  static const String Kumquat = 'asset/img/salad/Kumquat.jpg';
+  static const String Jujube = 'asset/img/salad/Jujube.jpg';
+  static const String Jabuticaba = 'asset/img/salad/Jabuticaba.jpg';
+
 
 //Colors--
   static Color hexToColor(String code) {

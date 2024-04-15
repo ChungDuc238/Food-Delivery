@@ -111,19 +111,19 @@ class _HomeScreenState extends State<HomeScreen>
                     children: [
                       Container(
                         color: Colors.orangeAccent,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(MySaladModel.newCombo),
                       ),
                       Container(
                         color: Colors.green.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(MySaladModel.myInfoAllList),
                       ),
                       Container(
                         color: Colors.red.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(MySaladModel.popCombo),
                       ),
                       Container(
                         color: Colors.blue.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(MySaladModel.topCombo),
                       ),
                     ],
                   ),
@@ -156,16 +156,16 @@ _buildAllProduct() => GridView.builder(
     );
 
 // Tab Products
-_buildAllProductTabs() => GridView.builder(
+_buildAllProductTabs(List<SaladModel> models) => GridView.builder(
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: 10.0,
         crossAxisSpacing: 10.0,
       ),
-      itemCount: MySaladModel.myInfoAllList.length,
+      itemCount: models.length,
       itemBuilder: (context, index) {
-        final allItem = MySaladModel.myInfoAllList[index];
+        final allItem = models[index];
 
         return CardWidget(infoModel: allItem);
       },
