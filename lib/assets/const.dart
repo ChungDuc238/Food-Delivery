@@ -40,6 +40,26 @@ class Const {
   static const String salad8 = 'asset/img/salad/salad8.jpeg';
   static const String salad9 = 'asset/img/salad/salad9.jpeg';
   static const String salad10 = 'asset/img/salad/salad10.jpeg';
+  static const String salad11 = 'asset/img/salad/salad11.jpg';
+  static const String salad12 = 'asset/img/salad/salad12.jpg';
+  static const String salad13 = 'asset/img/salad/salad13.jpg';
+  static const String salad14 = 'asset/img/salad/salad14.jpg';
+  static const String salad15 = 'asset/img/salad/salad15.jpg';
+  static const String salad16 = 'asset/img/salad/salad15.jpg';
+  static const String salad17 = 'asset/img/salad/salad17.jpg';
+  static const String salad18 = 'asset/img/salad/salad18.jpg';
+  static const String salad19 = 'asset/img/salad/salad19.jpg';
+  static const String salad20 = 'asset/img/salad/salad20.jpg';
+  static const String salad21 = 'asset/img/salad/salad21.jpg';
+  static const String salad22 = 'asset/img/salad/salad22.jpg';
+  static const String salad23 = 'asset/img/salad/salad23.jpg';
+  static const String salad24 = 'asset/img/salad/salad24.jpg';
+  static const String salad25 = 'asset/img/salad/salad25.jpg';
+  static const String salad26 = 'asset/img/salad/salad26.jpg';
+  static const String salad27 = 'asset/img/salad/salad27.jpg';
+  static const String salad28 = 'asset/img/salad/salad28.jpg';
+  static const String salad29 = 'asset/img/salad/salad29.jpg';
+  static const String salad30 = 'asset/img/salad/salad30.jpg';
 
 //Colors--
   static Color hexToColor(String code) {

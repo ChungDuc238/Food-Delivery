@@ -55,6 +55,15 @@ class _HomeScreenState extends State<HomeScreen>
             'Food Now',
             style: TextStyle(color: Colors.white),
           ),
+          actions: [
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/basketPage'),
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Icon(Icons.add_shopping_cart),
+              ),
+            ),
+          ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -111,19 +120,19 @@ class _HomeScreenState extends State<HomeScreen>
                     children: [
                       Container(
                         color: Colors.orangeAccent,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(fruits: MySaladModel.myInfoAllList),
                       ),
                       Container(
                         color: Colors.green.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(fruits: MySaladModel.hotFruits),
                       ),
                       Container(
                         color: Colors.red.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(fruits: MySaladModel.newFruits),
                       ),
                       Container(
                         color: Colors.blue.shade400,
-                        child: _buildAllProductTabs(),
+                        child: _buildAllProductTabs(fruits: MySaladModel.myInfoAllList),
                       ),
                     ],
                   ),
@@ -156,16 +165,16 @@ _buildAllProduct() => GridView.builder(
     );
 
 // Tab Products
-_buildAllProductTabs() => GridView.builder(
+_buildAllProductTabs({required List<SaladModel> fruits}) => GridView.builder(
       shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: 10.0,
         crossAxisSpacing: 10.0,
       ),
-      itemCount: MySaladModel.myInfoAllList.length,
+      itemCount: fruits.length,
       itemBuilder: (context, index) {
-        final allItem = MySaladModel.myInfoAllList[index];
+        final allItem = fruits[index];
 
         return CardWidget(infoModel: allItem);
       },

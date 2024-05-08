@@ -40,7 +40,9 @@ class _AddBasketItemsState extends State<AddBasketItems> {
   // Function to load data from the database
   Future<void> _loadData() async {
     await _loadSalads();
-    await _loadTotalPrice();
+    if (_salads.isNotEmpty) {
+      await _loadTotalPrice();
+    }
   }
 
 // Function to load total price value from the database
@@ -160,7 +162,7 @@ class _AddBasketItemsState extends State<AddBasketItems> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        showModalBottomSheet(
+                        _salads.isNotEmpty ? showModalBottomSheet(
                           isScrollControlled: true,
                           context: context,
                           backgroundColor: Colors.transparent,
@@ -173,12 +175,13 @@ class _AddBasketItemsState extends State<AddBasketItems> {
                           builder: (BuildContext context) {
                             return const BottomSheetCheckOutOrder(); // Display the bottom sheet
                           },
-                        );
+                        ) : null;
                       },
-                      child: const ButtonWidget(
+                      child: ButtonWidget(
                         height: 60,
                         width: 200,
-                        text: Const.checkOutOrder,
+                        bg: _salads.isNotEmpty ? Colors.green : Colors.grey,
+                        text: _salads.isNotEmpty ? Const.checkOutOrder : 'Please select product before payment',
                       ),
                     )
                   ],
